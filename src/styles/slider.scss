@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Maps&family=Shadows+Into+Light&display=swap');
+
+.carousel {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    height: 400px;
+    border: 7.5px solid #777;
+
+    span {
+        background-color: #222 !important;
+    }
+
+    //offer
+    #firstSlide {
+        background: url("../../../images/plaster.jpg");
+        background-size: cover;
+        background-blend-mode: hard-light;
+        background-color: tan;
+        height: 400px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        opacity: 0.80;
+
+    }
+
+    //shipping 
+    #secondSlide {
+        background-color: skyblue;
+        height: 400px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        h2 {
+            font-size: 40px;
+            color: #222;
+            text-transform: uppercase;
+
+        }
+    }
+
+    //clothing picture
+    #thirdSlide {
+        background: url("../../../images/blouse.jpg");
+        height: 400px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        background-size: cover;
+        opacity: 0.80;
+    }
+
+    h2 {
+        font-size: 40px;
+        color: #222;
+        text-align: center;
+        text-transform: uppercase;
+
+    }
+
+    p {
+        font-size: 27px;
+        color: goldenrod;
+    }
+
+
+}
+
+
+@media (max-width:1200px) {
+    .carousel {
+
+        #secondSlide {
+
+
+            text {
+                font-size: 28px;
+            }
+        }
+
+    }
+
+
+
+}
+
+@media (max-width:450px) {
+    .carousel {
+        #firstSlide {
+            background: url("https://cdn.pixabay.com/photo/2016/01/08/18/37/plaster-1128958_1280.jpg");
+            background-size: cover;
+            background-blend-mode: hard-light;
+            background-color: tan;
+            height: 400px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            opacity: 0.80;
+
+
+        }
+
+        h2 {
+            font-size: 30px;
+            color: #222;
+            margin-bottom: 40px;
+        }
+    }
+}

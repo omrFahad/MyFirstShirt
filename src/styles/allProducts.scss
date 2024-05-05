@@ -1,0 +1,261 @@
+.jackets,
+.T-shirts,
+.pants,
+.shoes {
+    margin: 100px auto;
+}
+
+.allProducts {
+    margin-left: 30px;
+}
+
+.split {
+    display: flex;
+}
+
+.category {
+    width: 20%;
+    margin-right: 20px;
+
+}
+
+.allProducts,
+.split {
+    margin-top: 50px;
+}
+
+.shoes {
+    .products-box {
+        width: 330px !important;
+    }
+
+    .imgContainer {
+        img {
+            width: 300px !important;
+            height: 300px !important;
+        }
+    }
+}
+
+.allProducts,
+.jackets,
+.T-shirts,
+.pants,
+.shoes {
+    width: 80%;
+    margin-bottom: 50px;
+
+    h2 {
+        word-spacing: 2px;
+        letter-spacing: 1px;
+        font-size: 34px;
+        color: #222;
+        border-bottom: 3px solid #222;
+        width: max-content;
+        line-height: 60px;
+    }
+
+    .products-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+
+        .products-box {
+            text-decoration: none;
+            width: 280px;
+            text-align: center;
+            height: 480px;
+            cursor: pointer;
+            margin: 25px 30px;
+            transition: 0.1s ease-in-out;
+
+
+            &:hover {
+                box-shadow: 10px 10px 54px rgba(0, 0, 0, 0.11);
+
+            }
+
+            .link-container {
+                text-decoration: none;
+            }
+
+
+
+            h6 {
+                height: 40px;
+                color: #222;
+                letter-spacing: 1px;
+                word-spacing: -1px;
+                font-size: 20px;
+                font-weight: 700;
+            }
+
+            .product-buttons {
+                display: flex;
+                color: #222;
+                font-size: 24px;
+                margin: 0 auto;
+                width: max-content;
+                transition: .05s ease-in-out;
+
+                .product-price {
+                    margin-right: 10px;
+                    background-color: #222;
+                    color: white;
+                    padding: 10px 5px;
+                    border-radius: 50%;
+
+
+
+                }
+
+                svg {
+                    color: #222;
+                    margin: auto 0;
+                    border-radius: 5px;
+                    width: 45px;
+                    height: 35px;
+                    cursor: pointer;
+                    transition: .05s ease-in-out;
+
+
+                }
+            }
+        }
+
+        .imgContainer {
+
+            img {
+                width: 250px;
+                height: 300px;
+                border-radius: 5px;
+            }
+        }
+
+
+
+
+        h6,
+        img,
+        div {
+            margin: 10px 0px;
+        }
+
+
+    }
+}
+
+
+
+
+
+.category {
+
+    .category-container {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        white-space: nowrap;
+
+        input {
+            accent-color: #222;
+            margin: 5px 10px;
+            width: 30px;
+            height: 20px;
+        }
+
+        label {
+
+            font-size: 20px;
+        }
+    }
+}
+
+@media (max-width:1024px) {
+
+    .jackets,
+    .T-shirts,
+    .pants,
+    .shoes {
+        margin: 100px auto;
+    }
+
+    .allProducts,
+    .jackets,
+    .T-shirts,
+    .pants,
+    .shoes {
+
+
+        .products-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+        }
+    }
+}
+
+
+@media (max-width:420px) {
+    .shoes {
+        .products-box {
+            width: 230px !important;
+        }
+
+        .imgContainer {
+            img {
+                width: 200px !important;
+                height: 200px !important;
+            }
+        }
+    }
+
+    .allProducts,
+    .jackets,
+    .T-shirts,
+    .pants,
+    .shoes {
+
+        h2 {
+            font-size: 30px;
+        }
+
+        .products-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+
+            .products-box {
+                width: 180px;
+                height: 400px;
+                margin: 25px 0px;
+            }
+
+            .imgContainer {
+
+                img {
+                    width: 150px;
+                    height: 200px;
+                }
+            }
+        }
+    }
+
+    .category {
+
+        .category-container {
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+            white-space: nowrap;
+
+            input {
+                margin: 5px 0px;
+                width: 25px;
+                height: 15px;
+            }
+
+            label {
+
+                font-size: 14px;
+            }
+        }
+    }
+}

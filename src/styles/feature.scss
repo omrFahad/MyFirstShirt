@@ -1,0 +1,128 @@
+.feature {
+    margin: 200px -30px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .feature-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .feature-box {
+            background: url("../../../images/dirty-1041387_1280.jpg");
+            background-blend-mode: hard-light;
+            background-size: cover;
+            background-color: #222;
+            margin: 15px 15px;
+            height: 250px;
+            transition: all 200ms ease-in-out;
+            width: 250px;
+            text-decoration: none;
+            cursor: pointer;
+
+            h6 {
+                font-size: 40px;
+                line-height: 240px;
+
+            }
+
+            &:nth-child(1) {
+                background-color: darkred;
+                border-radius: 50%;
+                border-left: 20px solid black;
+
+                &:hover {
+                    background-color: #ff0000;
+                    border-left: 24px solid #444;
+
+                    h6 {
+                        color: #ff000050;
+                    }
+
+                }
+            }
+
+            &:nth-child(2) {
+                background-color: black;
+                border-radius: 50%;
+                border-left: 24px solid black;
+
+                &:hover {
+                    background-color: #111;
+                    border-left: 28px solid #444;
+
+                    h6 {
+                        color: #777;
+                    }
+                }
+            }
+
+            &:nth-child(3) {
+                background-color: navy;
+                border-radius: 50%;
+                border-left: 28px solid black;
+
+                &:hover {
+                    background-color: mediumblue;
+                    border-left: 32px solid #444;
+
+                    h6 {
+                        color: #00008075;
+                    }
+                }
+            }
+
+            &:nth-child(4) {
+                background-color: green;
+                border-radius: 50%;
+                border-left: 32px solid black;
+
+                &:hover {
+                    background-color: darkgreen;
+                    border-left: 36px solid #444;
+
+                    h6 {
+                        color: #00800075;
+                    }
+                }
+            }
+
+
+
+
+
+        }
+
+        h6 {
+            text-align: center;
+            color: #222;
+            font-size: 34px;
+        }
+
+
+    }
+}
+
+
+@media (max-width: 1220px) {
+    .feature {
+        margin: 300px 0px;
+
+        .feature-container {
+            flex-wrap: wrap;
+        }
+    }
+}
+
+
+@media (max-width: 820px) {
+    .feature {
+        margin: 500px 0px;
+
+        .feature-container {
+            flex-wrap: wrap;
+        }
+    }
+}

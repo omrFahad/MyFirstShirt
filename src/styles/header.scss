@@ -1,0 +1,264 @@
+$color1 : red;
+
+.navbar {
+
+    .container {
+        a {
+            text-decoration: none;
+
+        }
+
+        .header-menu {
+            display: none;
+            cursor: pointer;
+
+            svg {
+                width: 50px;
+                height: 40px;
+            }
+        }
+
+        .input-group {
+            width: 22%;
+            z-index: 999;
+            position: relative;
+
+            .search-container {
+                margin-top: 39px;
+                height: 50vh;
+                background-color: white;
+                position: absolute;
+                overflow-x: hidden;
+                overflow-y: auto;
+                scroll-behavior: smooth;
+
+                &::-webkit-scrollbar {
+                    width: 8px;
+                }
+
+                &::-webkit-scrollbar-thumb {
+                    background-color: #222;
+                }
+
+                .items {
+                    text-decoration: none;
+                    display: flex;
+                    margin-bottom: 10px;
+                    border-bottom: 1px solid #222;
+                    line-height: 10px;
+                    margin-right: 10px;
+
+                    img {
+                        margin-right: 4px;
+                        width: 50px;
+                        height: 60px;
+                    }
+
+                    h6 {
+                        color: #222;
+
+                        &:hover {
+                            color: #555;
+                        }
+                    }
+                }
+            }
+
+            .input-group-text {
+                border: 1px solid #222;
+                border-radius: 2px !important;
+                background-color: white;
+            }
+
+            .form-control {
+                border-radius: 2px !important;
+                border: 1px solid #222;
+
+                &:focus {
+                    outline: none;
+                    box-shadow: none;
+
+                }
+            }
+        }
+
+        .navbar-nav {
+            font-size: 20px;
+
+
+            .cartFig {
+                margin-right: 10px;
+
+                svg {
+                    width: 40px;
+                    height: 30px;
+                }
+            }
+
+            .loginFig {
+                svg {
+                    width: 40px;
+                    height: 30px;
+                }
+            }
+
+            .nav-link {
+                border-radius: 2px;
+                color: #222;
+                padding: 10px;
+                text-decoration: none;
+
+                a {
+                    color: #222;
+                }
+
+                span {
+                    font-size: 18px;
+                    background-color: #222;
+                    color: white;
+                    border-radius: 2px;
+                    padding: 1px 7px;
+                }
+
+                &:hover {
+                    background-color: #222;
+
+                    svg {
+                        color: snow;
+                    }
+
+                    span {
+                        background-color: white;
+                        color: #222;
+                    }
+                }
+            }
+        }
+
+    }
+
+    .navbar-brand {
+        font-size: 32px;
+        margin-left: 10px;
+
+        b {
+            font-size: 34px;
+        }
+
+        svg {
+            border: 2px solid #222;
+            margin-right: 5px;
+            color: #ff0000 !important;
+            background: radial-gradient(circle, rgb(201, 0, 0) 50%, rgba(0, 0, 0, 1) 100%);
+            border-radius: 50px;
+            color: snow;
+            width: 50px;
+            height: 50px;
+
+        }
+    }
+
+
+}
+
+
+//RESPONSIVE HEADER 
+
+@media (max-width:620px) {
+
+    .navbar-expand {
+        width: 100vw;
+    }
+
+    .navbar {
+
+        .container {
+            margin: 0 20px;
+
+
+
+            .navbar-nav {
+                display: flex;
+                flex-direction: row;
+
+
+                .nav-link {
+                    padding: 5px;
+                }
+            }
+
+            .header-menu {
+                display: block;
+                margin-left: -30px;
+
+                svg {
+                    width: 40px;
+                    height: 30px;
+                }
+            }
+
+        }
+
+    }
+}
+
+@media (max-width:450px) {
+    .navbar {
+        margin-bottom: 35px;
+
+        .container {
+            .input-group {
+                width: 102%;
+                z-index: 999;
+                position: absolute;
+                margin-top: 90px;
+                margin-left: -32px;
+
+            }
+
+            .navbar-nav {
+                font-size: 20px;
+
+                svg {
+                    width: 30px;
+                    height: 20px;
+                }
+
+                .cartFig {
+                    margin-right: 5px;
+                }
+
+                .loginFig {}
+
+                .nav-link {
+                    width: max-content;
+                    height: max-content;
+
+                    span {
+                        font-size: 18px;
+                        background-color: #222;
+                        color: white;
+                        border-radius: 2px;
+                        padding: 0px 3px;
+                    }
+                }
+            }
+        }
+
+        .navbar-brand {
+            font-size: 18px;
+            margin-left: 20px;
+            width: max-content;
+
+            b {
+                font-size: 15px;
+            }
+
+            svg {
+                width: 30px;
+                height: 30px;
+
+            }
+        }
+    }
+}

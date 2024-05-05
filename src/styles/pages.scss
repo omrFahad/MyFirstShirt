@@ -1,0 +1,197 @@
+.faq {
+    margin-top: 50px;
+
+    h4 {
+        word-spacing: 2px;
+        font-size: 34px;
+        color: #222;
+    }
+
+    p {
+        font-size: 24px;
+    }
+}
+
+
+// contact page
+
+.contact {
+    h2 {
+        border-bottom: 3px solid #222;
+        width: max-content;
+    }
+
+
+
+    .contact-container {
+        margin-top: 30px;
+
+
+        .social-media {
+            display: flex;
+
+            .icon-container {
+                display: flex;
+                flex-direction: column;
+                background-color: #222;
+                width: max-content;
+                border-radius: 10px;
+
+                svg {
+                    color: white;
+                    margin: 10px 0px;
+                    width: 45px;
+                    height: 35px;
+                }
+            }
+        }
+
+        .account {
+            text-align: center;
+            margin: auto 0px auto 20px;
+            background-color: #222;
+            border-radius: 10px;
+            padding: 5px;
+
+            h6 {
+                color: white;
+                font-weight: 600;
+                font-size: 24px;
+                text-transform: capitalize;
+
+            }
+
+        }
+
+        .telephone {
+            margin-top: 50px;
+
+            h4 {
+                font-size: 28px;
+            }
+
+            svg {
+                background-color: #222;
+                color: white;
+                border-radius: 10px;
+                margin-top: -10px;
+                width: 60px;
+                height: 50px;
+            }
+        }
+
+        .email {
+            margin-top: 50px;
+
+
+            h4 {
+                font-size: 28px;
+            }
+
+            svg {
+                background-color: #222;
+                width: 60px;
+                height: 50px;
+                color: white;
+                border-radius: 10px;
+            }
+        }
+    }
+}
+
+
+// login page 
+.login {
+    height: 100vh;
+    margin-top: 140px;
+
+    .login-container {
+        display: flex;
+        justify-content: center;
+
+        .input-container {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            background-color: #222;
+            border-radius: 5px;
+            width: 500px;
+            height: max-content;
+            border-radius: 10px;
+            padding: 45px 50px;
+            transition: 0.1s ease-in-out;
+
+
+            label {
+                font-size: 26px;
+                font-weight: 500;
+                color: wheat;
+
+                &:nth-child(3) {
+                    margin-top: 30px;
+                }
+            }
+
+            input {
+                margin: 15px 0px;
+                outline: none;
+                border: none;
+                padding: 20px;
+                border-radius: 10px;
+                font-size: 22px;
+                background-color: white;
+            }
+
+            button {
+                border: none;
+                padding: 10px;
+                border-radius: 10px;
+                font-size: 26px;
+                font-weight: 500;
+                background-color: white;
+                color: #222;
+                width: max-content;
+                margin: 30px auto 0px;
+                cursor: pointer;
+
+                &:hover {
+                    background-color: wheat;
+                }
+            }
+
+        }
+    }
+}
+
+@media (max-width:420px) {
+    .login {
+
+        .login-container {
+
+            .input-container {
+                width: 300px;
+                height: max-content;
+                border-radius: 10px;
+                padding: 25px 30px;
+                transition: 0.1s ease-in-out;
+
+
+
+                input {
+                    margin: 10px 0px;
+                    padding: 15px;
+                    font-size: 15px;
+                }
+
+                button {
+                    padding: 10px;
+                    font-size: 18px;
+                    margin: 20px auto 0px;
+
+                }
+
+            }
+        }
+    }
+
+}

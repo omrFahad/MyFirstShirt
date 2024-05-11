@@ -9,6 +9,7 @@ let drop = <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBo
 
 
 let Navb = ({ toggle, setToggle }) => {
+
     let [display, setDisplay] = useState("block")
     let hideNav = () => {
         setDisplay("none")
@@ -40,11 +41,11 @@ let Navb = ({ toggle, setToggle }) => {
                             <Link to="jackets">Jackets</Link>
                             <Link to="shoes">Shoes</Link>
                             <Link to="pants">Pants</Link>
-                            <a href="/All" >All products</a>
+                            <a href="All"  >All products</a>
                         </Nav.Item>
                     </Nav.Item>
                     <Nav.Item>
-                        <Nav.Link >
+                        <Nav.Link id='faq' >
                             <Link to='FAQ'>FAQ</Link>
                         </Nav.Link>
                     </Nav.Item>
@@ -55,7 +56,6 @@ let Navb = ({ toggle, setToggle }) => {
                 </Nav>
             </Container >
         </nav >
-
 
     )
 

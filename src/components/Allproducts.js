@@ -31,23 +31,23 @@ let Allproducts = () => {
                     <div className="category-container">
                         <span>
                             <input onClick={() => catFunction("T-shirts")} type="radio" id="T-shirts" name="category" value="Tshirt" />
-                            <label for="T-shirts">T-shirts</label>
+                            <label htmlFor="T-shirts">T-shirts</label>
                         </span>
                         <span>
                             <input onClick={() => catFunction("Jackets")} type="radio" id="Jackets" name="category" value="Jackets" />
-                            <label for="Jackets">Jackets</label>
+                            <label htmlFor="Jackets">Jackets</label>
                         </span>
                         <span>
                             <input onClick={() => catFunction("Pants")} type="radio" id="Pants" name="category" value="Pants" />
-                            <label for="Pants">Pants</label>
+                            <label htmlFor="Pants">Pants</label>
                         </span>
                         <span>
                             <input onClick={() => catFunction("Shoes")} type="radio" id="Shoes" name="category" value="Shoes" />
-                            <label for="Shoes">Shoes</label>
+                            <label htmlFor="Shoes">Shoes</label>
                         </span>
                         <span>
                             <input onClick={() => setCat(products)} type="radio" id="All" name="category" value="All" />
-                            <label for="All">All</label>
+                            <label htmlFor="All">All</label>
                         </span>
 
                     </div>

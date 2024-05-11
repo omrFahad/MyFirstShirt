@@ -10,12 +10,9 @@ import { CatContext } from "../context/CatContext"
 import "../styles/allProducts.scss"
 
 
-
-
 let Jackets = ({ data }) => {
     let product = useSelector((state) => state.product)
     let dispatch = useDispatch()
-
     let { CatFunction2, num, updateHeight, cat, increaseHeight, showClear } = useContext(CatContext)
 
     CatFunction2("Jackets")

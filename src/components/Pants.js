@@ -13,10 +13,7 @@ import "../styles/allProducts.scss"
 let Pants = ({ data }) => {
     let product = useSelector((state) => state.product)
     let dispatch = useDispatch()
-
     let { CatFunction2, num, updateHeight, cat, increaseHeight, showClear } = useContext(CatContext)
-
-
 
     CatFunction2("Pants")
 

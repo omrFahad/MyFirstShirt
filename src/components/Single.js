@@ -4,9 +4,7 @@ import { products } from "../data/products"
 import { useDispatch, useSelector } from "react-redux"
 import { addToCart } from "../slices/cartSlice"
 import { useState, useContext } from "react"
-
 import { CatContext } from "../context/CatContext"
-
 import '../styles/single.scss'
 
 let Single = () => {
@@ -16,7 +14,11 @@ let Single = () => {
     let [qty, setQty] = useState(1)
     let dispatch = useDispatch()
     let single = products.find(s => s.id === +id)
-    let { num, updateHeight, increaseHeight, showClear } = useContext(CatContext)
+    let { num, updateHeight, increaseHeight, showClear, scroll } = useContext(CatContext)
+
+    if (scroll == true) {
+        window.scrollTo(0, 0);
+    }
     return (
         <Container>
             <div className="single">

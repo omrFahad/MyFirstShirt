@@ -9,10 +9,10 @@ const getHeight = localStorage.getItem('height')
 
 let CatContexProvider = ({ children }) => {
     const [height, setHeight] = useState(getHeight || '120vh');
-
     let [cat, setCat] = useState(products)
     let [num, setNum] = useState(1)
     let [display, setDisplay] = useState("none")
+    let [scroll, setScroll] = useState(false)
 
     const updateHeight = (newHeight) => {
         localStorage.setItem('height', newHeight);
@@ -68,7 +68,8 @@ let CatContexProvider = ({ children }) => {
             products,
             catFunction,
             CatFunction2,
-
+            scroll,
+            setScroll,
         }}>
             {children}
 

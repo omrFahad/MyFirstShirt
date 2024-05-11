@@ -2,7 +2,6 @@
 import Slider from './Slider';
 import Feature from './Feature';
 import Best from './Best';
-
 import { products } from '../data/products';
 
 
